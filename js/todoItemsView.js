@@ -39,7 +39,7 @@ let TodoItemsView = Backbone.View.extend({
   render: function() {
     let self = this;
 
-    this.$el.append('<input type="text" autofocus id="newTodoItem"></input>')
+    this.$el.append(`<input type="text" autofocus id="newTodoItem"></input>`)
     this.$el.append('<button id="add">Add</button>');
 
     this.model.each(function(todoItem) {
