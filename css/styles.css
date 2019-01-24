@@ -3,7 +3,23 @@ body {
 	padding: 40px;
 }
 
-body, p { font-size: 24px; }
+body, p {
+  font-size: 24px;
+}
+
+#todoItems {
+  list-style: none;
+  border-top: 1px solid  #ccc;
+  border-left:  1px solid #ccc;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+#todoItems > li {
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
 
 #todoItems li.completed {
   text-decoration: line-through;
