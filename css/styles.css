@@ -1,13 +1,17 @@
 
 body {
-	padding: 40px;
+  padding: 40px;
+  background: #eee;
 }
 
 body, p {
-  font-size: 24px;
+  font-size: 16px;
 }
 
+
+
 #todoItems {
+  background: #fff;
   list-style: none;
   border-top: 1px solid  #ccc;
   border-left:  1px solid #ccc;
@@ -21,6 +25,35 @@ body, p {
   border-bottom: 1px solid #ccc;
 }
 
-#todoItems li.completed {
-  text-decoration: line-through;
+#todoItems > li > label {
+  max-width: 80%;
+  display: inline-block;
 }
+
+#todoItems > li > #delete {
+  float: right;
+  font-size: 14px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  background: crimson;
+  padding: 7px;
+}
+
+#todoItems li.completed > label {
+  text-decoration: line-through;
+  font-style: italic;
+  color: #999;
+}
+
+#newTodoItem {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+}
+
+#todoItemsContainer {
+  margin: 0 auto;
+  width: 600px;
+}
+
